@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* make sure the body takes the full height */
+  display: flex; /* use flexbox to center the canvas */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  background-color: #071218; /* a dark background for contrast */
+}
+
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  max-width: 90%; /* leave some space around the canvas */
+  max-height: 90%;
+  border: 2px solid #0f0; /* neon green border */
+  box-shadow: 
+    0px 0px 5px rgb(0, 255, 242), /* inner glow */
+    0px 0px 20px rgb(0, 255, 242), /* middle glow */
+    0px 0px 40px rgb(0, 255, 242), /* outer glow */
+    0px 0px 80px rgb(0, 255, 242); /* far outer glow */
+}
